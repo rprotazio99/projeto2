@@ -1,11 +1,17 @@
-body{
-    background-color: blueviolet;
+body {
+  background-color: #17a1af;
+  font-family: "montserrat", sans-serif;
 }
-h1{
-    color: burlywood;
-    text-align: center;
+h1 {
+  text-align: center;
+  color: #ffffff;
 }
-p{
-    color: burlywood;
-    text-align: center;
+
+h2,
+h3 {
+  color: #ffffff;
+}
+a {
+  color: #000000;
+  font-weight: bold;
 }
