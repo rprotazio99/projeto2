@@ -1,7 +1,63 @@
+:root {
+  font-size: 16px; /* Define o tamanho da fonte base aqui para cálculos com 'rem' */
+}
+
 body {
   background-color: #17a1af;
-  font-family: "montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif; /* Garante o uso consistente da família de fontes */
 }
+
+/* --- Reset Global de Links --- */
+/* Remove o sublinhado de todos os links por padrão */
+a {
+  text-decoration: none;
+  color: inherit; /* Faz com que os links herdem a cor do texto do elemento pai por padrão */
+  font-weight: bold; /* Mantém negrito para todos os links, se essa for a intenção.
+                         Caso contrário, mova para seletores mais específicos. */
+}
+
+/* --- Estilos da Barra de Navegação (Navbar) --- */
+.navbar {
+  background: white;
+  font-family: "Montserrat", sans-serif;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logonav {
+  font-size: 2.1875rem; /* Equivalente a 35px se a fonte base do :root for 16px (35/16 = 2.1875) */
+  font-weight: bold; /* 'font: bold;' não é uma forma válida de usar shorthand para font-weight */
+}
+
+.logonav a {
+  color: #000000; /* Cor específica para o link do logotipo */
+}
+
+.navlist {
+  list-style: none; /* Remove os marcadores de lista padrão */
+  display: inline-block;
+}
+
+.navlist a {
+  color: black; /* Cor específica para os links da navbar */
+  font-size: 1.125rem; /* Equivalente a 18px se a fonte base do :root for 16px (18/16 = 1.125) */
+  /* font-weight: bold; <-- Já coberto pelo reset global 'a' acima se mantido lá, caso contrário, adicione aqui */
+  margin-right: 25px;
+  /* Adiciona um efeito de transição para uma melhor experiência do usuário ao passar o mouse */
+  transition: color 0.3s ease;
+}
+
+.navlist a:hover {
+  color: #17a1af; /* Exemplo: muda a cor do link ao passar o mouse */
+}
+
+/* --- Estilos de Títulos --- */
 h1 {
   text-align: center;
   color: #ffffff;
@@ -10,8 +66,4 @@ h1 {
 h2,
 h3 {
   color: #ffffff;
-}
-a {
-  color: #000000;
-  font-weight: bold;
 }
