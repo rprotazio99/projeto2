@@ -4,98 +4,158 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Analisaclin - Medicina Integrada</title>
+
     <link rel="stylesheet" href="estilo.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      .banner-img {
+        width: 100%;
+        height: auto;
+        max-height: 450px; /* ajusta a altura máxima */
+        object-fit: cover; /* mantém o corte proporcional */
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h1>ANALISACLIN - MEDICINA INTEGRADA</h1>
+      <img
+        src="fachada.png"
+        alt="Fachada do Laboratório Analisaclin"
+        class="banner-img"
+      />
+
       <nav class="navbar">
         <div class="navdiv">
           <div class="logonav"><a href="#">Analisaclin</a></div>
-          <ul>
-            <li class="navlist"><a href="#">Sobre Nos</a></li>
-            <li class="navlist"><a href="#">Serviços</a></li>
-            <li class="navlist"><a href="#">Resultados</a></li>
-            <li class="navlist"><a href="#">Localização</a></li>
-            <li class="navlist"><a href="#">Contatos</a></li>
+          <ul class="navlist">
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#resultados">Resultados</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+            <li><a href="#contatos">Contatos</a></li>
           </ul>
         </div>
       </nav>
     </header>
-    <hr />
+
     <main>
-      <section>
-        <h2>Conheca mais sobre o nos</h2>
+      <section id="sobre" class="content-section">
+        <h2>Sobre Nós</h2>
         <p>
-          A Analisaclin é um laboratório de análises clínicas localizado em São
-          José da Tapera, Alagoas. Oferecemos uma ampla gama de serviços
-          médicos, incluindo exames laboratoriais, consultas e especialidades
-          médicas.
+          A <strong>Analisaclin - Medicina Integrada</strong> é um laboratório
+          de análises clínicas comprometido com a saúde e bem-estar da
+          comunidade de São José da Tapera, Alagoas.
+        </p>
+        <p>
+          Acreditamos na medicina integrada, que considera o paciente em sua
+          totalidade. Nosso laboratório oferece uma ampla variedade de exames e
+          consultas para atender às diversas necessidades de nossos pacientes.
         </p>
       </section>
-      <hr />
-      <section>
-        <h2>Serviços</h2>
+
+      <section id="servicos" class="content-section">
+        <h2>Nossos Serviços</h2>
         <ul>
-          <li>Exames em Geral</li>
-          <li>Consultas</li>
-          <li>Pediatria</li>
-          <li>Cardiologia</li>
+          <li>
+            <strong>Exames Laboratoriais:</strong> Desde análises de rotina até
+            testes complexos.
+          </li>
+          <li>
+            <strong>Consultas Médicas:</strong> Profissionais qualificados em
+            diversas especialidades.
+          </li>
+          <li>
+            <strong>Pediatria:</strong> Atendimento especializado para crianças.
+          </li>
+          <li>
+            <strong>Cardiologia:</strong> Cuidados completos para o coração.
+          </li>
+          <li>
+            <strong>Outras Especialidades:</strong> Consulte nossa lista
+            completa.
+          </li>
         </ul>
       </section>
-      <hr />
-      <section>
+
+      <section id="resultados" class="content-section">
         <h2>Resultados Online</h2>
         <p>
-          <a
-            href="https://portal.worklabweb.com.br/resultados/2635"
-            target="_blank"
-          >
-            Acesse seus resultados online
-          </a>
+          Acesse seus resultados de exames de forma rápida e segura através do
+          nosso portal online.
         </p>
+        <a
+          href="https://portal.worklabweb.com.br/resultados/2635"
+          target="_blank"
+          class="button"
+        >
+          <i class="fas fa-file-medical"></i> Consulte seus Resultados
+        </a>
       </section>
-      <hr />
-      <section>
+
+      <section id="localizacao" class="content-section">
         <h2>Localização</h2>
         <p>
-          Estamos localizados na rua
-          <strong>Pereira Alves 477 - São José da Tapera - Alagoas</strong>
+          Estamos localizados em:
+          <strong>
+            Rua Pereira Alves, 477 - Centro, São José da Tapera - AL
+          </strong>
+          – CEP: 57630-000
         </p>
-        <p>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.436656461802!2d-37.38309392409567!3d-9.557574990526382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x708a94c84786fa5%3A0xd278a951df42326c!2sR.%20Jos%C3%A9%20Pereira%20Alves%2C%20477%20-%20Sao%20Jose%20Da%20Tapera%2C%20S%C3%A3o%20Jos%C3%A9%20da%20Tapera%20-%20AL%2C%2057445-000!5e0!3m2!1spt-BR!2sbr!4v1755649704459!5m2!1spt-BR!2sbr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="contatos" class="content-section">
+        <h2>Contatos</h2>
+        <p>Entre em contato conosco:</p>
+        <div class="contact-buttons">
           <a
-            href="https://www.google.com/maps/search/?api=1&query=José+Pereira+Alves+477,+São+José+da+Tapera,+Alagoas"
+            href="https://wa.me/5582981308147"
+            class="button whatsapp"
             target="_blank"
           >
-            Ver no Google Maps
+            <i class="fab fa-whatsapp"></i> WhatsApp
           </a>
-        </p>
+          <a
+            href="https://www.instagram.com/analisaclin/"
+            class="button instagram"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
       </section>
     </main>
-    <hr />
+
     <footer>
-      <section>
-        <h2>Contatos</h2>
-        <p>
-          WhatsApp:
-          <a
-            href="https://wa.me/5582981308147?text=Olá,%20vim%20através%20do%20site%20e%20gostaria%20de%20mais%20informações"
-            >Iniciar Conversa</a
-          >
-        </p>
-        <p>
-          Instagram:
-          <a href="https://www.instagram.com/analisaclin/" target="_blank"
-            >@analisaclin</a
-          >
-        </p>
-      </section>
+      <p>
+        © 2025 Analisaclin - Medicina Integrada. Todos os direitos reservados.
+      </p>
     </footer>
   </body>
 </html>
